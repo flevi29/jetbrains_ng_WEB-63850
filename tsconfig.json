@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./packages/backend"
+    },
+    {
+      "path": "./packages/environments"
+    },
+    {
+      "path": "./packages/search-engine"
+    }
+  ]
+}

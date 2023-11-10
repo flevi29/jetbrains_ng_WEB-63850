@@ -1,0 +1,21 @@
+{
+  "name": "search-engine",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/src/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.app.json",
+    "bootstrap": "tsx scripts/bootstrap.ts",
+    "reset": "tsx scripts/delete-index.ts && tsx scripts/bootstrap.ts"
+  },
+  "devDependencies": {
+    "environments": "workspace:*",
+    "meilisearch": "^0.35.0"
+  }
+}

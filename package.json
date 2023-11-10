@@ -1,0 +1,32 @@
+{
+  "name": "slk-library-metadata-aggregator",
+  "scripts": {
+    "build:environments": "pnpm --filter \"environments\" run build",
+    "build:search-engine": "pnpm --filter \"search-engine\" run build",
+    "bootstrap:search-engine": "pnpm --filter \"search-engine\" run bootstrap",
+    "reset:search-engine": "pnpm --filter \"search-engine\" run reset",
+    "build:harvest-manager": "pnpm --filter \"harvest-manager\" run build",
+    "build:backend": "pnpm --filter \"backend\" run build",
+    "start:backend": "pnpm --filter \"backend\" run start",
+    "build:frontend": "pnpm --filter \"frontend\" run build",
+    "dev:frontend": "pnpm --filter \"frontend\" run dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "npm-run-all2": "^6.1.1",
+    "pino": "^8.16.1",
+    "prettier": "^3.0.3",
+    "tsx": "^4.0.0",
+    "typescript": "^5.2.2",
+    "zod": "^3.22.4"
+  },
+  "packageManager": "pnpm@8.10.2",
+  "engines": {
+    "node": ">=18.18.0",
+    "pnpm": ">=8.0.0"
+  }
+}

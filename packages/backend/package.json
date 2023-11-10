@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node dist/src/main.js",
+    "build": "tsc -p tsconfig.app.json"
+  },
+  "type": "module",
+  "dependencies": {
+    "@directus/api": "^14.0.2",
+    "@directus/errors": "^0.2.0",
+    "@directus/extensions": "^0.1.1",
+    "@fastify/error": "^3.4.1",
+    "@nestjs/common": "^10.2.8",
+    "@nestjs/core": "^10.2.8",
+    "@nestjs/platform-fastify": "^10.2.8",
+    "async-mutex": "^0.4.0",
+    "croner": "^7.0.4",
+    "environments": "workspace:*",
+    "fastify": "^4.24.3",
+    "meilisearch": "^0.35.0",
+    "oai_pmh_v2": "^0.8.0",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.1",
+    "search-engine": "workspace:*",
+    "slonik": "^37.2.0",
+    "undici": "^5.27.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@directus/types": "^11.0.1",
+    "directus": "^10.7.2",
+    "execa": "^8.0.1",
+    "ts-morph": "^19.0.0",
+    "undici-types": "^5.27.2"
+  },
+  "license": "UNLICENSED"
+}

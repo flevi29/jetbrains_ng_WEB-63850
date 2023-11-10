@@ -1,0 +1,15 @@
+{
+  "name": "despair",
+  "version": "0.13.6",
+  "private": true,
+  "main": "./build/instant-meilisearch.umd.js",
+  "module": "./build/instant-meilisearch.esm.js",
+  "browser": "./build/instant-meilisearch.umd.js",
+  "cjs": "./build/instant-meilisearch.cjs.js",
+  "typings": "./build/types/index.d.ts",
+  "types": "./build/types/index.d.ts",
+  "dependencies": {
+    "meilisearch": "^0.35.0",
+    "cross-fetch": "^4.0.0"
+  }
+}

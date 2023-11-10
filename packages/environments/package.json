@@ -1,0 +1,21 @@
+{
+  "name": "environments",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/src/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "run-s build:es-keys build:src build:backend-docker-dotenv",
+    "build:backend-docker-dotenv": "tsx scripts/write-root-docker-env.ts",
+    "build:es-keys": "tsx scripts/write-meilisearch-keys.ts",
+    "build:src": "tsc -p tsconfig.app.json"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^10.2.7"
+  }
+}

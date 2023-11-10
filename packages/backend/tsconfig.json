@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.node.json",
+  "compilerOptions": {
+    "preserveSymlinks": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "incremental": true
+  },
+  "references": [
+    {
+      "path": "../environments"
+    },
+    {
+      "path": "../search-engine"
+    }
+  ]
+}
